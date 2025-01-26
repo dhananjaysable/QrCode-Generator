@@ -5,7 +5,7 @@ const urlImg = document.getElementById("qr-img")
 btn.addEventListener("click", () => {
     const inputValue = urlInput.value;
     if (!inputValue) {
-        alert("Please enter something!")
+        alert("Please enter url to generate QR Code");
         return;
     } else {
         urlImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${inputValue}`
